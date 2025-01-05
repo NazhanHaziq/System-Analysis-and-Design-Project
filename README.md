@@ -1,5 +1,5 @@
 # System-Analysis-and-Design-Project
-(17/11/2024) UMPSA BCS1133
+(12/1/2024) UMPSA BCS1133
 
 
   The Beauty Salon Management System (BSMS) represents a pivotal advancement in the realm of beauty and wellness industry management, aiming to streamline operational processes, enhance customer experiences, and optimise business performance. In response to the growing demand for efficient salon management solutions, the BSMS has been meticulously designed to address the unique needs of beauty establishments, irrespective of their scale.
