@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Dashboard</title>
+	
+	
+	<!------------------ css  ------------------>
+	
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+			background-color: #370A44;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+			border-radius: 0px;
+        }
+		
+		header img {
+            width: 200px;
+            height: 100px;
+            margin-right: 10px;
+			border-radius: 15px;
+        }
+
+        nav {
+            background-color: #a88224;
+            padding: 10px;
+			border-radius: 0px;
+			
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .profile-details {
+            flex-grow: 1;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        label {
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 97%;
+        }
+
+        button {
+            background-color: #6A3378;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #A355B5;
+        }
+		
+		#rcorners1 {
+		  border-radius: 25px;
+		  background: #efeee0;
+		  padding: 20px;
+		  width: 700px;
+		  height: 550px;
+		}
+        .row {
+            display: flex;
+        }
+        .column {
+            flex: auto;
+            padding: auto;
+            height: auto;
+        }
+    </style>
+</head>
+	
+	
+	<!------------------------------ background cover ------------------------------>
+	
+	<style>
+body {
+  background-image: url("https://cdn.discordapp.com/attachments/854261563363688468/1194715837614006383/bg_salon2.jpg?ex=65b15cd4&is=659ee7d4&hm=a502b13bef3f3b0e0ffe0ecf4efc69eb7f9285f5f2806886c046ebf626c16302&");
+	background-size: cover;
+}
+</style>
+	
+	
+	
+	
+<body>
+
+	<!---------------------------------- Header ---------------------------------->
+	
+<header>
+
+    <div class="row">
+        <div class="column" >
+            <img src="https://cdn.discordapp.com/attachments/854261563363688468/1194715839040065677/Logo_Salon.png?ex=65b15cd4&is=659ee7d4&hm=19d1b6e87af05c4f91e8eb336c779840c49feb3585f501ed4245b231d073450c&">
+          </div>
+          <div class="column" style="text-align:center;">
+            <h1>User Profile Page</h1>
+          </div>
+    </div>
+
+</header>
+
+	
+	
+	<!------------------------------- Navigation Bar ------------------------------->
+	
+<nav>
+    <a href="#">Dashboard</a>
+    <a href="#">Profile</a>
+    <a href="#">Settings</a>
+    <a href="#">Logout</a>
+</nav>
+
+	
+	<!------------------------------ Profile Form ------------------------------>
+	
+<div id="rcorners1" class="container">
+    <div class="profile">
+        <img src="https://cdn.discordapp.com/attachments/854261563363688468/1194715839400779857/Nazhan_Portrait.png?ex=65b15cd4&is=659ee7d4&hm=6489e682658ca18da4a735c19f98d7ce13e188b306e83fd14151388e0f4a3c32&" alt="Profile Picture" width="80" height="115">
+        <div class="profile-details">
+            <h2>AHMAD NAZHAN HAZIQ BIN AHMAD FUAD</h2>
+            <p>Email: nazhanfuad@google.com</p>
+            <p>Phone Number: (+60) 14-7203059</p>
+        </div>
+    </div>
+
+    <h2>Edit Profile</h2>
+    <form id="profileForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="user@example.com" required>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" value="(555) 123-4567" required>
+		
+		<label for="uname">Username:</label>
+        <input type="uname" id="uname" name="uname" value="Nazhan01" required>
+		
+		<label for="pass">Password:</label>
+        <input type="pass" id="pass" name="pass" value="********" required>
+
+		
+		
+        <!---------------------------------- Button ---------------------------------->
+		
+        <button style="display:block; margin: 0 auto;" type="submit">Save Changes</button>
+    </form>
+</div>
+
+</body>
+</html>

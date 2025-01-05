@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Inventory Editor</title>
+	
+	
+	
+	<!-------------------- css  -------------------->
+	
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+			background-color: #370A44;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+			border-radius: 0px;
+        }
+		
+		header img {
+            width: 200px;
+            height: 100px;
+            margin-right: 10px;
+			border-radius: 15px;
+        }
+
+        nav {
+            background-color: #a88224;
+            padding: 10px;
+			border-radius: 0px;
+			
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .product img {
+            border-radius: 10%;
+            margin-right: 20px;
+        }
+
+        .product-details {
+            flex-grow: 1;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        label {
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 97%;
+        }
+
+        button {
+            background-color: #6A3378;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #A355B5;
+        }
+		
+		#rcorners1 {
+		  border-radius: 25px;
+		  background: #efeee0;
+		  padding: 20px;
+		  width: 700px;
+		  height: 630px;
+		}
+        .row {
+            display: flex;
+        }
+        .column {
+            flex: auto;
+            padding: auto;
+            height: auto;
+        }
+    </style>
+</head>
+
+	
+	<!---------------------------- Background Cover ---------------------------->
+	
+<style>
+body {
+  background-image: url("https://cdn.discordapp.com/attachments/854261563363688468/1194715837614006383/bg_salon2.jpg?ex=65b15cd4&is=659ee7d4&hm=a502b13bef3f3b0e0ffe0ecf4efc69eb7f9285f5f2806886c046ebf626c16302&");
+	background-size: cover;
+}
+</style>
+	
+	
+	<!-------------------------------- Header -------------------------------->
+	
+<body>
+
+<header>
+
+    <div class="row">
+        <div class="column" >
+            <img src="https://cdn.discordapp.com/attachments/854261563363688468/1194715839040065677/Logo_Salon.png?ex=65b15cd4&is=659ee7d4&hm=19d1b6e87af05c4f91e8eb336c779840c49feb3585f501ed4245b231d073450c&" alt="logosalon">
+          </div>
+          <div class="column" style="text-align:center;">
+            <h1>Product Inventory Editor</h1>
+          </div>
+    </div>
+
+</header>
+
+	
+	<!---------------------- Navigation Bar ---------------------->
+	
+<nav>
+    <a href="#">Dashboard</a>
+    <a href="#">Profile</a>
+    <a href="#">Settings</a>
+    <a href="#">Logout</a>
+</nav>
+
+	
+	<!---------------------------------- Form Box Container ---------------------------------->
+	
+<div id="rcorners1" class="container">
+    <div class="product">
+        <img src="https://badlabco.com/wp-content/uploads/2020/06/Like-a-Boss-80g-2-300x300.png" alt="productpicture" width="300" height="300">
+        <div class="product-details">
+            <h2>BAD LAB</h2>
+            <p>LIKE A BOSS</p>
+            <p>Sculping Hair Clay</p>
+        </div>
+    </div>
+
+	
+	
+	<!---------------------- Product Editing ---------------------->
+	
+    <h2>Edit Product</h2>
+    <form id="ProductForm">
+        <label for="productbrand">Brand Name:</label>
+        <input type="productbrand" id="productbrand" name="productbrand" value="BAD LAB" required>
+
+        <label for="pdetails">Product Details:</label>
+        <input type="pdetails" id="pdetails" name="pdetails" value="LIKE A BOSS" required>
+		
+		<label for="pdescription">(Optional) Product Description:</label>
+        <input type="pdescription" id="pdescription" name="pdescription" value="Sculping Hair Clay" required>
+
+		
+		
+	<!--------------------------- Button --------------------------->
+		
+        <button style="display:block; margin: 0 auto;" type="submit">Save Changes</button>
+    </form>
+</div>
+
+</body>
+</html>

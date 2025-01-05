@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="onlinebooking.css">
+    <title>Hair Salon Booking</title>
+	
+	
+	<!-------------------------------- Background Cover -------------------------------->
+	
+	<style>
+	body {
+		  background-image: url("https://cdn.discordapp.com/attachments/854261563363688468/1194715837614006383/bg_salon2.jpg?ex=65b15cd4&is=659ee7d4&hm=a502b13bef3f3b0e0ffe0ecf4efc69eb7f9285f5f2806886c046ebf626c16302&");
+			background-size: cover;
+		}
+</style>
+</head>
+	
+	
+	<!--------------------------------------- Header --------------------------------------->
+	
+<body>
+	<header>
+		<div class="row">
+			<div class="column">
+			<img src="https://cdn.discordapp.com/attachments/854261563363688468/1194715839040065677/Logo_Salon.png?ex=65b15cd4&is=659ee7d4&hm=19d1b6e87af05c4f91e8eb336c779840c49feb3585f501ed4245b231d073450c&" alt="Logo Salon">
+			</div>
+			<div class="column" style="text-align:center;">
+    <h1>Online Booking</h1>
+			</div>
+		</div>
+</header>
+
+	
+	<!--------------------------- Navigation Bar --------------------------->
+	
+<nav>
+    <a href="#">Dashboard</a>
+    <a href="#">Profile</a>
+    <a href="#">Settings</a>
+    <a href="#">Logout</a>
+</nav>
+	
+	
+	<!----------------------- Booking Form ----------------------->
+	
+    <div class="container">
+        <h1>Beauty Salon Booking System</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <label for="service">Select Service:</label>
+            <select id="service" name="service" required>
+                <option value="haircut">Haircut</option>
+                <option value="coloring">Hair Coloring</option>
+                <option value="styling">Hair Styling</option>
+            </select>
+            
+            <label for="comments">Comments (Optional):</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+            
+			
+			<!-------------- Button -------------->
+			
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>
